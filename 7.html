@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>replit</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="w3-theme-d1">
+
+  <header class="w3-theme-d1 w3-container w3-row">
+
+        <!-- Cabeçalho -->
+        <div class="container-logo w3-cell" style="width: 300px;">
+            <div class="logo-texto">
+                <h1><img src="img/ianesicon.jpg" height="50px"/> IANES TECH </h1>
+            </div>
+            
+        </div><!-- container logo -->
+
+        
+            <nav class="inicial">
+                <a id="1" href="index.html" class="w3-button w3-hover-theme w3-cell">HOME</a>
+                <a id="2" href="1.html" class="w3-button w3-hover-theme w3-cell">TUTORIAL</a>
+                <a id="3" href="cadastro.html" class="w3-button w3-hover-theme w3-cell">CADASTRO</a>
+                <a id="4" href="login.html" class="w3-button w3-hover-theme w3-cell">LOGIN</a>
+                <div id="perfil" class="w3-cell"> <button onclick="deslogar()" class="w3-button w3-hover-theme">DESLOGAR</button><div id="nomeuser"></div></div>
+
+            </nav>
+        <!-- menu -->
+    </header>
+
+    <aside class="w3-theme-l1 w3-sidebar w3-bar-block w3-colapse w3-card" id="meuaside" style="display:none">
+
+      <button class="w3-bar-item w3-button w3-large w3-hover-theme" onclick="w3_close()">Close &times;</button>
+
+      <nav class="w3-container w3-bar-block">
+        <a href="1.html" class="w3-button w3-hover-theme w3-bar-item">Introdução</a>
+        <a href="2.html" class="w3-button w3-hover-theme w3-bar-item">Fluxo de código</a>
+        <a href="3.html" class="w3-button w3-hover-theme w3-bar-item">Tipos de dados</a>
+        <a href="4.html" class="w3-button w3-hover-theme w3-bar-item">Operadores</a>
+        <a href="5.html" class="w3-button w3-hover-theme w3-bar-item">Variável</a>
+        <a href="6.html" class="w3-button w3-hover-theme w3-bar-item">Condicional</a>
+        <a href="7.html" class="w3-button w3-hover-theme w3-bar-item">Loop</a>
+        <a href="8.html" class="w3-button w3-hover-theme w3-bar-item">Exemplo</a>
+        <a href="prova.html" class="w3-button w3-hover-theme w3-bar-item">Prova</a>
+      </nav>
+
+  </aside>
+
+  <main class="" id="conteudo">
+      
+      <div name="titulo" class="w3-conteiner w3-theme-l2">
+        <h2><button class="w3-button w3-xlarge" id="abrirnav" onclick="w3_open()">&#9776;</button>Loop</h2>
+      </div>
+      
+      <article name="aula" class="w3-conteiner w3-theme-l5 w3-row">
+        <div class="w3-col s0 m2">&nbsp;</div>
+        <div class="w3-col s12 m8">
+          <div class='embed-container'><iframe src="https://www.youtube.com/embed/BLbbTkUWDPw" title="Fundamentos da programação: aula 7 - Loop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          
+          <p> Nessa aula vamos aprender sobre o loop. O loop tem uma estrutura muito parecida com a condicional, onde ele recebe um argumento, se o argumento for verdadeiro, ele irá executar uma ação, a diferença é que a condicional ela executava a ação uma única vez, já o loop executa a ação de uma maneira contínua, por exemplo, se "3>1" então "levantar a mão" três é maior que um, então o argumento é verdadeiro, então sua mão deve ficar levantada, se fosse uma condicional você já poderia abaixar sua mão porque ele executa o código somente uma vez, mas como está ação é contínua sua mão deverá ficar levantada enquanto o argumento é verdadeiro, mas se alterarmos o argumento para negativo "3 < 1"  já conseguimos abaixar a mão porque três não é menor que um, então a ação fica como falsa e conseguimos parar de executar está ação.  </p>
+          <section class="w3-display-container w3-theme-l5 w3-container" style="height: 50px;">
+            <a href="6.html" class="w3-button w3-display-left w3-hover-theme w3-theme-l2">&larr; Anteriror</a>
+            <a href="8.html" class="w3-button w3-display-right w3-hover-theme w3-theme-l2">Próximo &rarr;</a>
+          </section> 
+        </div>
+        <div class="w3-col s0 m2">&nbsp;</div>
+      </article>
+    
+
+      
+
+      <footer class="w3-theme-d1 w3-container w3-row">
+        
+        <div class="w3-cell-row w3-col s10">
+            <h4> Sobre: </h4>
+            <p> A empresa é especialista na área educacional IANES Tech oferta vários cursos na área de tecnologia, com muitos
+                anos de mercado, seu diferencial sempre foi cursos 100% presenciais, mas agora tambem passa a ofertar cursos à distância. </p>
+        </div>
+        
+        <div class="w3-cell-row w3-col s2">
+
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile" href="https://mail.google.com/mail/" target="_blank">
+            <img src="img/mail.png" width="26" height="30">
+            </a>
+        
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile " href="https://www.facebook.com.br" target="_blank">
+            <img src="img/face.png"width="26" height="30">
+            </a>
+        
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile " href="https://br.linkedin.com/" target="_blank">
+            <img src="img/linkedin.png" width="26" height="30">
+            </a>
+
+        </div>
+
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

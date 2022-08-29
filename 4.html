@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>replit</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="w3-theme-d1">
+
+  <header class="w3-theme-d1 w3-container w3-row">
+
+        <!-- Cabeçalho -->
+        <div class="container-logo w3-cell" style="width: 300px;">
+            <div class="logo-texto">
+                <h1><img src="img/ianesicon.jpg" height="50px"/> IANES TECH </h1>
+            </div>
+            
+        </div><!-- container logo -->
+
+        
+            <nav class="inicial">
+                <a id="1" href="index.html" class="w3-button w3-hover-theme w3-cell">HOME</a>
+                <a id="2" href="1.html" class="w3-button w3-hover-theme w3-cell">TUTORIAL</a>
+                <a id="3" href="cadastro.html" class="w3-button w3-hover-theme w3-cell">CADASTRO</a>
+                <a id="4" href="login.html" class="w3-button w3-hover-theme w3-cell">LOGIN</a>
+                <div id="perfil" class="w3-cell"> <button onclick="deslogar()" class="w3-button w3-hover-theme">DESLOGAR</button><div id="nomeuser"></div></div>
+
+            </nav>
+        <!-- menu -->
+    </header>
+
+    <aside class="w3-theme-l1 w3-sidebar w3-bar-block w3-colapse w3-card" id="meuaside" style="display:none">
+
+      <button class="w3-bar-item w3-button w3-large w3-hover-theme" onclick="w3_close()">Close &times;</button>
+
+      <nav class="w3-container w3-bar-block">
+        <a href="1.html" class="w3-button w3-hover-theme w3-bar-item">Introdução</a>
+        <a href="2.html" class="w3-button w3-hover-theme w3-bar-item">Fluxo de código</a>
+        <a href="3.html" class="w3-button w3-hover-theme w3-bar-item">Tipos de dados</a>
+        <a href="4.html" class="w3-button w3-hover-theme w3-bar-item">Operadores</a>
+        <a href="5.html" class="w3-button w3-hover-theme w3-bar-item">Variável</a>
+        <a href="6.html" class="w3-button w3-hover-theme w3-bar-item">Condicional</a>
+        <a href="7.html" class="w3-button w3-hover-theme w3-bar-item">Loop</a>
+        <a href="8.html" class="w3-button w3-hover-theme w3-bar-item">Exemplo</a>
+        <a href="prova.html" class="w3-button w3-hover-theme w3-bar-item">Prova</a>
+      </nav>
+
+  </aside>
+
+  <main class="" id="conteudo">
+      
+      <div name="titulo" class="w3-conteiner w3-theme-l2">
+        <h2><button class="w3-button w3-xlarge" id="abrirnav" onclick="w3_open()">&#9776;</button>Operadores</h2>
+      </div>
+      
+      <article name="aula" class="w3-conteiner w3-theme-l5 w3-row">
+        <div class="w3-col s0 m2">&nbsp;</div>
+        <div class="w3-col s12 m8">
+          <div class='embed-container'><iframe src="https://www.youtube.com/embed/b4NZvGB3utY" title="Fundamentos da programação: aula 4 - Operadores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          
+          <p> Na aula passada vimos quais eram os Tipos de dados. Nessa aula vamos ver sobre os operadores , os operadores são as ferramentas que usamos para manipular os dados da aula passada. Os quatro principais operadores que utilizamos para a manipulação dos números, quando juntamos esses operadores com os números conseguimos formar argumentos que vão resultar em um número, por exemplo, o operador da adição, conseguimos criar o argumento "2+2" este cálculo o valor dele será igual á "4", a mesma coisa pode ser dita para os demais três operadores, se escrevermos a operação "3*2" este argumento será lido pela máquina como "6".  </p>
+          <p> Os operadores também podem ser usados para manipular caracteres, o exemplo que temos é a concatenação, a concatenação ela serve para juntar dois ou mais caracteres em um só, por exemplo, se temos o caractere "A" e juntamos com o caractere "Z", iremos ter o conjunto de caractere "AZ", eles vão deixar de ser duas partes separadas e vão passar a se tornar uma única parte contendo às duas, isso é a concatenação das letras. </p>
+          <p> Os operadores de booleanos, quando construímos um argumento utilizando esses operadores, o resultado vai ser retornado como um booleano, vai ser retornado como verdadeiro ou falso. Os quatro principais operadores que retornam um booleano são, maior que, menor que, igual e a negação, alguns exemplos, são, "2>1" dois é maior que um, então ele vai retornar um booleano verdadeiro, mas se invertemos os números, como, por exemplo, "1>2" o resultado será falso, porque um não é maior que dois, essa mesma lógica se aplica ao operador menor que, só que ao invés de olharmos se é maior que o número de trás, nós estamos olhando se o número da frente é menor do que o de trás, então se colocar que 1 é menor que 2  ele retorna verdadeiro, o oposto dele vai retornar falso, o operador de igual ele se os dados serão iguais, por exemplo 2 = 2 ele retorna verdadeiro, já o o operador de negação, ele serve para inverter o resultado final, por exemplo, se colocar "2!=2" ele vai retornar falso, porque dois é igual a dois, mas estamos negando este argumento, então pegamos o resultado que antes era verdadeiro e estamos transformando ele em um resultado falso.   </p>
+          <section class="w3-display-container w3-theme-l5 w3-container" style="height: 50px;">
+            <a href="3.html" class="w3-button w3-display-left w3-hover-theme w3-theme-l2">&larr; Anteriror</a>
+            <a href="5.html" class="w3-button w3-display-right w3-hover-theme w3-theme-l2">Próximo &rarr;</a>
+          </section> 
+        </div>
+        <div class="w3-col s0 m2">&nbsp;</div>
+      </article>
+    
+
+      
+
+      <footer class="w3-theme-d1 w3-container w3-row">
+        
+        <div class="w3-cell-row w3-col s10">
+            <h4> Sobre: </h4>
+            <p> A empresa é especialista na área educacional IANES Tech oferta vários cursos na área de tecnologia, com muitos
+                anos de mercado, seu diferencial sempre foi cursos 100% presenciais, mas agora tambem passa a ofertar cursos à distância. </p>
+        </div>
+        
+        <div class="w3-cell-row w3-col s2">
+
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile" href="https://mail.google.com/mail/" target="_blank">
+            <img src="img/mail.png" width="26" height="30">
+            </a>
+        
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile " href="https://www.facebook.com.br" target="_blank">
+            <img src="img/face.png"width="26" height="30">
+            </a>
+        
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile " href="https://br.linkedin.com/" target="_blank">
+            <img src="img/linkedin.png" width="26" height="30">
+            </a>
+
+        </div>
+
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

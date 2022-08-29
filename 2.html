@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>replit</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="w3-theme-d1">
+
+  <header class="w3-theme-d1 w3-container w3-row">
+
+        <!-- Cabeçalho -->
+        <div class="container-logo w3-cell" style="width: 300px;">
+            <div class="logo-texto">
+                <h1><img src="img/ianesicon.jpg" height="50px"/> IANES TECH </h1>
+            </div>
+            
+        </div><!-- container logo -->
+
+        
+            <nav class="inicial">
+                <a id="1" href="index.html" class="w3-button w3-hover-theme w3-cell">HOME</a>
+                <a id="2" href="1.html" class="w3-button w3-hover-theme w3-cell">TUTORIAL</a>
+                <a id="3" href="cadastro.html" class="w3-button w3-hover-theme w3-cell">CADASTRO</a>
+                <a id="4" href="login.html" class="w3-button w3-hover-theme w3-cell">LOGIN</a>
+                <div id="perfil" class="w3-cell"> <button onclick="deslogar()" class="w3-button w3-hover-theme">DESLOGAR</button><div id="nomeuser"></div></div>
+
+            </nav>
+        <!-- menu -->
+    </header>
+
+    <aside class="w3-theme-l1 w3-sidebar w3-bar-block w3-colapse w3-card" id="meuaside" style="display:none">
+
+      <button class="w3-bar-item w3-button w3-large w3-hover-theme" onclick="w3_close()">Close &times;</button>
+
+      <nav class="w3-container w3-bar-block">
+        <a href="1.html" class="w3-button w3-hover-theme w3-bar-item">Introdução</a>
+        <a href="2.html" class="w3-button w3-hover-theme w3-bar-item">Fluxo de código</a>
+        <a href="3.html" class="w3-button w3-hover-theme w3-bar-item">Tipos de dados</a>
+        <a href="4.html" class="w3-button w3-hover-theme w3-bar-item">Operadores</a>
+        <a href="5.html" class="w3-button w3-hover-theme w3-bar-item">Variável</a>
+        <a href="6.html" class="w3-button w3-hover-theme w3-bar-item">Condicional</a>
+        <a href="7.html" class="w3-button w3-hover-theme w3-bar-item">Loop</a>
+        <a href="8.html" class="w3-button w3-hover-theme w3-bar-item">Exemplo</a>
+        <a href="prova.html" class="w3-button w3-hover-theme w3-bar-item">Prova</a>
+      </nav>
+
+  </aside>
+
+  <main class="" id="conteudo">
+      
+      <div name="titulo" class="w3-conteiner w3-theme-l2">
+        <h2><button class="w3-button w3-xlarge" id="abrirnav" onclick="w3_open()">&#9776;</button>Fluxo de Código</h2>
+      </div>
+      
+      <article name="aula" class="w3-conteiner w3-theme-l5 w3-row">
+        <div class="w3-col s0 m2">&nbsp;</div>
+        <div class="w3-col s12 m8">
+          <div class='embed-container'><iframe src="https://www.youtube.com/embed/6rN9E-oHqL4" title="Fundamentos da programação: aula 2 - Fluxo de código" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          
+          <p> Nessa segunda aula, nós iremos falar sobre Fluxo do Código, como ele flui e exerce cada etapa.
+          O código é dividido em diversas linhas e dentro de uma única linha pode ter várias etapas, o código executa etapa por etapa. No vídeo iremos mostrar dois exemplos de dois códigos, onde um é uma única linha e o outro é dividido em duas linhas. 
+          Exemplo da linha 1: Escrever "Oi" em uma única linha e ação. Exemplo da linha 2: Escrever "O" e escrever "I", apesar dos dois códigos serem diferentes, eles chegaram no mesmo resultado, todos os dois escreveram "Oi". 
+          Serve como um exemplo a forma que diferentes programadores acham soluções diferentes pro mesmo problema, a mesma solução pode ter vários caminhos.
+          </p>
+          <p>Output é uma palavra derivada do inglês onde "put" é colocar e "out" é  para fora, então output é "colocar para fora", algo que está saindo do código e está indo pro usuário.</p>
+          <p> Input é o oposto do output, separando em dois radicais, onde "put" é colocar e "in" dentro, então input é "colocar para dentro", é uma informação que está saindo do usuário e entrando no código.  </p>
+          <p> No nosso exemplo só estamos utilizando o Output, nosso Output é o "Oi". Um exemplo de input é quando fazemos login em um site e ele pede seu usuário e senha, o ato de digitar é o input, já o output nessa situação, depois de concluir o login, aparecerá "login feito com sucesso" essa mensagem é o output. 
+          Uma explicação é de como nós programadores pensamos na hora de resolver um problema, um problema muito simples, achamos duas soluções para isso, porém temos que tomar muito cuidado com relação ao fluxo do código que é a ordem de como vai ser executado, se escrevemos primeiro "i" e depois "o" nosso código irá dar errado, não vamos está escrevendo "oi" e sim "io", a linha de cima é executada primeiro e depois a segunda linha, é algo que devemos ter cuidado, a ordem que as coisas estão sendo feitas. 
+          Algo que também é útil é utilizar dependendo da situação que você irá usar, como por exemplo uma ação complicada: Abrir uma porta, se escrevermos "abro a porta" muitas vezes é uma ação complicada para ser transmitida pro computador, então nesse caso é melhor separar em ações pequenas, por exemplo: "1- Eu me viro para porta" "2- Eu ando até a porta" "3- Eu pego a maçaneta" "4- Eu viro a maçaneta" "5- E eu abro a porta".
+          Quando separamos ações complicadas em ações pequenas, ajuda a pensar exatamente o que aconteceria primeiro e depois o que aconteceria.
+          </p>
+          <section class="w3-display-container w3-theme-l5 w3-container" style="height: 50px;">
+            <a href="1.html" class="w3-button w3-display-left w3-hover-theme w3-theme-l2">&larr; Anteriror</a>
+            <a href="3.html" class="w3-button w3-display-right w3-hover-theme w3-theme-l2">Próximo &rarr;</a>
+          </section> 
+        </div>
+        <div class="w3-col s0 m2">&nbsp;</div>
+      </article>
+    
+
+      
+
+      <footer class="w3-theme-d1 w3-container w3-row">
+        
+        <div class="w3-cell-row w3-col s10">
+            <h4> Sobre: </h4>
+            <p> A empresa é especialista na área educacional IANES Tech oferta vários cursos na área de tecnologia, com muitos
+                anos de mercado, seu diferencial sempre foi cursos 100% presenciais, mas agora tambem passa a ofertar cursos à distância. </p>
+        </div>
+        
+        <div class="w3-cell-row w3-col s2">
+
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile" href="https://mail.google.com/mail/" target="_blank">
+            <img src="img/mail.png" width="26" height="30">
+            </a>
+        
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile " href="https://www.facebook.com.br" target="_blank">
+            <img src="img/face.png"width="26" height="30">
+            </a>
+        
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile " href="https://br.linkedin.com/" target="_blank">
+            <img src="img/linkedin.png" width="26" height="30">
+            </a>
+
+        </div>
+
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

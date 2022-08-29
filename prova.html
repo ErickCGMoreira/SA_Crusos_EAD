@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>replit</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="w3-theme-d1">
+
+  <header class="w3-theme-d1 w3-container w3-row">
+
+        <!-- Cabeçalho -->
+        <div class="container-logo w3-cell" style="width: 300px;">
+            <div class="logo-texto">
+                <h1><img src="img/ianesicon.jpg" height="50px"/> IANES TECH </h1>
+            </div>
+            
+        </div><!-- container logo -->
+
+        
+            <nav class="inicial">
+                <a id="1" href="index.html" class="w3-button w3-hover-theme w3-cell">HOME</a>
+                <a id="2" href="1.html" class="w3-button w3-hover-theme w3-cell">TUTORIAL</a>
+                <a id="3" href="cadastro.html" class="w3-button w3-hover-theme w3-cell">CADASTRO</a>
+                <a id="4" href="login.html" class="w3-button w3-hover-theme w3-cell">LOGIN</a>
+                <div id="perfil" class="w3-cell"> <button onclick="deslogar()" class="w3-button w3-hover-theme">DESLOGAR</button><div id="nomeuser"></div></div>
+
+            </nav>
+        <!-- menu -->
+    </header>
+
+    <aside class="w3-theme-l1 w3-sidebar w3-bar-block w3-colapse w3-card" id="meuaside" style="display:none">
+
+      <button class="w3-bar-item w3-button w3-large w3-hover-theme" onclick="w3_close()">Close &times;</button>
+
+      <nav class="w3-container w3-bar-block">
+        <a href="1.html" class="w3-button w3-hover-theme w3-bar-item">Introdução</a>
+        <a href="2.html" class="w3-button w3-hover-theme w3-bar-item">Fluxo de código</a>
+        <a href="3.html" class="w3-button w3-hover-theme w3-bar-item">Tipos de dados</a>
+        <a href="4.html" class="w3-button w3-hover-theme w3-bar-item">Operadores</a>
+        <a href="5.html" class="w3-button w3-hover-theme w3-bar-item">Variável</a>
+        <a href="6.html" class="w3-button w3-hover-theme w3-bar-item">Condicional</a>
+        <a href="7.html" class="w3-button w3-hover-theme w3-bar-item">Loop</a>
+        <a href="8.html" class="w3-button w3-hover-theme w3-bar-item">Exemplo</a>
+        <a href="prova.html" class="w3-button w3-hover-theme w3-bar-item">Prova</a>
+      </nav>
+
+  </aside>
+
+  <main class="" id="conteudo">
+      
+      <div name="titulo" class="w3-conteiner w3-theme-l2">
+        <h2><button class="w3-button w3-xlarge" id="abrirnav" onclick="w3_open()">&#9776;</button>Prova</h2>
+      </div>
+      
+      <article name="aula" class="w3-conteiner w3-theme-l5 w3-row">
+        <div class="w3-col s0 m2">&nbsp;</div>
+        <div class="w3-col s12 m8">
+        <p>Ao começar a prova você terá três tentativas para acertar pelo menos 9 questões, ao falhar 3 veses você irá falhar o curso e não receberá o diploma de conclusão. Boa sorte.</p>
+        <form action="#" method="post" id="prova" name="prova">
+          <ol type="1" start="1">
+            <li>
+              <p>Qual operador deve ser utilizado para tornar o argumento (2 _ 3 == 6) verdadeiro?</p>
+              <section class="resposta">
+                <input type="radio" id="q1a"  name="q1" value="0"/> + 
+                <input type="radio" id="q1b"  name="q1" value="0"/> - 
+                <input type="radio" id="q1c"  name="q1" value="1"/> * 
+                <input type="radio" id="q1d"  name="q1" value="0"/> /
+              </section>
+            </li>
+            <li>
+              <p>Qual é o tipo de dado que indica verdadeiro ou falso?</p>
+              <section class="resposta">
+                <input type="radio" id="q2a"  name="q2" value="0"/> Numeros 
+                <input type="radio" id="q2b"  name="q2" value="0"/> Caracteres 
+                <input type="radio" id="q2c"  name="q2" value="0"/> String 
+                <input type="radio" id="q2d"  name="q2" value="1"/> Booleano
+              </section>
+            </li>
+            <li>
+              <p>A seguinte frase: ""</p>
+              <section class="resposta">
+                <input type="radio" id="q3a"  name="q3" value="0"/> Numeros 
+                <input type="radio" id="q3b"  name="q3" value="0"/> Caracteres 
+                <input type="radio" id="q3c"  name="q3" value="1"/> String 
+                <input type="radio" id="q3d"  name="q3" value="0"/> Booleano
+              </section>
+            </li>
+            <li>
+              <p>Qual operador deve ser utilizado para tornar o argumento (2 _ 3 == 5) verdadeiro?</p>
+              <section class="resposta">
+                <input type="radio" id="q4a"  name="q4" value="1"/> + 
+                <input type="radio" id="q4b"  name="q4" value="0"/> - 
+                <input type="radio" id="q4c"  name="q4" value="0"/> * 
+                <input type="radio" id="q4d"  name="q4" value="0"/> /
+              </section>
+            </li>
+            <li>
+              <p>A seguinte frase "Variáveis conseguem guardar um dado para ser acessado mais tarde" é: </p>
+              <section class="resposta">
+                <input type="radio" id="q5a"  name="q5" value="1"/> Verdadeira 
+                <input type="radio" id="q5b"  name="q5" value="0"/> Falsa
+              </section>
+            </li>
+            <li>
+              <p>A seguinte frase "Um caractere é um conjunto de strings" é:</p>
+              <section class="resposta">
+                <input type="radio" id="q6a"  name="q6" value="0"/> Verdadeira
+                <input type="radio" id="q6b"  name="q6" value="1"/> Falsa
+              </section>
+            </li>
+            <li>
+              <p>Complete a seguinte frase: "____________ possuem uma condição que ao ser verdadeira executa um código uma vez"</p>
+              <section class="resposta">
+                <input type="radio" id="q7a"  name="q7" value="1"/> Condicionais 
+                <input type="radio" id="q7b"  name="q7" value="0"/> Loop 
+                <input type="radio" id="q7c"  name="q7" value="0"/> Output 
+                <input type="radio" id="q7d"  name="q7" value="0"/> Operadores
+              </section>
+            </li>
+            <li>
+              <p>A seguinte frase "Programar é organizar um programa, definir uma sequencia de ações que serão executadas em um ordem específica" é: </p>
+              <section class="resposta">
+                <input type="radio" id="q8a"  name="q8" value="1"/> Verdadeira 
+                <input type="radio" id="q8b"  name="q8" value="0"/> Falsa
+              </section>
+            </li>
+            <li>
+              <p>A seguinte frase "Ao programar é importante prestar atenção na sequencia das ações a serem executadas para garantir que o resultado desejado seja alcançado" é: </p>
+              <section class="resposta">
+                <input type="radio" id="q9a"  name="q9" value="1"/> Verdadeira 
+                <input type="radio" id="q9b"  name="q9" value="0"/> Falsa
+              </section>
+            </li>
+            <li>
+              <p>A seguinte frase "Programar é organizar um programa, definir uma sequencia de ações que serão executadas em um ordem específica" é: </p>
+              <section class="resposta">
+                <input type="radio" id="q10a" name="q10" value="1"/> Verdadeira 
+                <input type="radio" id="q10b" name="q10" value="0"/> Falsa
+              </section>
+            </li>
+            <li>
+              <p>Qual operador deve ser utilizado para tornar o argumento (6 _ 3) verdadeiro?</p>
+              <section class="resposta">
+                <input type="radio" id="q11a" name="q11" value="0"/> &gt; 
+                <input type="radio" id="q11b" name="q11" value="0"/> &lt; 
+                <input type="radio" id="q11c" name="q11" value="0"/> == 
+                <input type="radio" id="q11d" name="q11" value="1"/> !=
+              </section>
+            </li>
+            <li>
+              <p>Qual operador deve ser utilizado para tornar o argumento (6 _ 3 == 2) verdadeiro?</p>
+              <section class="resposta">
+                <input type="radio" id="q12a" name="q12" value="0"/> + 
+                <input type="radio" id="q12b" name="q12" value="0"/> - 
+                <input type="radio" id="q12c" name="q12" value="0"/> * 
+                <input type="radio" id="q12d" name="q12" value="1"/> /
+              </section>
+            </li>
+          </ol>
+        </form>
+        <section class="w3-display-container w3-theme-l5 w3-container" style="height: 50px;">
+          <a href="8.html" class="w3-button w3-display-left w3-hover-theme w3-theme-l2">&larr; Anteriror</a>
+          <button onclick="verificarprova()" id="download-btn" class="w3-button w3-display-right w3-hover-theme w3-theme-l2">Verificar respostas</button>
+        </section> 
+      </div>
+      <div class="w3-col s0 m2">&nbsp;</div>
+      </article>
+      <canvas id="canvas" height="350px" width="500px"></canvas>
+    
+
+      
+
+      <footer class="w3-theme-d1 w3-container w3-row">
+        
+        <div class="w3-cell-row w3-col s10">
+            <h4> Sobre: </h4>
+            <p> A empresa é especialista na área educacional IANES Tech oferta vários cursos na área de tecnologia, com muitos
+                anos de mercado, seu diferencial sempre foi cursos 100% presenciais, mas agora tambem passa a ofertar cursos à distância. </p>
+        </div>
+        
+        <div class="w3-cell-row w3-col s2">
+
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile" href="https://mail.google.com/mail/" target="_blank">
+            <img src="img/mail.png" width="26" height="30">
+            </a>
+        
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile " href="https://www.facebook.com.br" target="_blank">
+            <img src="img/face.png"width="26" height="30">
+            </a>
+        
+            <a class="w3-button w3-hover-theme w3-cell w3-mobile " href="https://br.linkedin.com/" target="_blank">
+            <img src="img/linkedin.png" width="26" height="30">
+            </a>
+
+        </div>
+
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
