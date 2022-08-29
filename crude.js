@@ -94,34 +94,3 @@ function excluir(del) {
     return false;
   }
 }
-function logar(){
-  emaillogin = document.getElementById("emaillogin").value;
-  senhalogin = String(document.getElementById("senhalogin").value);
-  if(localStorage.getItem(emaillogin)){
-      var nome = String(localStorage.getItem(emaillogin).split(','[0]));
-      var senha = String(localStorage.getItem(emaillogin).split(',')[1]);
-      var cpf = String(localStorage.getItem(emaillogin).split(',')[2]);
-  }
-  if (emaillogin == "" || senhalogin == ""){
-      alert("existem  campos vazios.");
-      return false;
-  }
-
-  if(localStorage.getItem(emaillogin)){
-      if(senha == senhalogin){
-          email = emaillogin
-          nome = nome
-          senha = senha
-          localStorage.setItem('logado', nome+","+email+","+senha);
-          window.location.href = "index.html"
-          // alert("Logado||")
-          return true;
-      }
-  }
-  alert("usuario ou senha incorretos!");
-  return false;
-}
-function deslogar(){
-  localStorage.removeItem('logado');
-  window.location.href = "home.html"
-}
